@@ -34,7 +34,7 @@ By completing this lab, you will gain hands-on experience in:
 7. [Configure Shared Storage](#7-configure-shared-storage)
 8. [Set Up Monitoring with Azure Monitor](#8-set-up-monitoring-with-azure-monitor)
 9. [Export ARM Templates for Future Deployment](#9-export-arm-templates-for-future-deployment)
-10. [Challenges & Fixes](#challenges--fixes)
+10. [Challenges & Fixes](#10-challenges--fixes)
 
 ## **Project Steps**
 ### **1. Set Up Department Group Resources**
