@@ -35,6 +35,7 @@ By completing this lab, you will gain hands-on experience in:
 8. [Set Up Monitoring with Azure Monitor](#8-set-up-monitoring-with-azure-monitor)
 9. [Export ARM Templates for Future Deployment](#9-export-arm-templates-for-future-deployment)
 10. [Challenges & Fixes](#10-challenges--fixes)
+11. [(BONUS) Cloud Infrastructure Presentation Video](#11-bonus-cloud-infrastructure-presentation-video)
 
 ## **Project Steps**
 ### **1. Set Up Department Group Resources**
@@ -42,14 +43,18 @@ By completing this lab, you will gain hands-on experience in:
   - **Marketing and Sales (MAS)** – `jmoore-mas`
   - **IT** – `jmoore-it`
   - **HR** – `jmoore-hr`
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
+
+<img width="1560" alt="Screen Shot 2025-02-03 at 10 40 12 PM" src="https://github.com/user-attachments/assets/200d3ad7-ffbd-429e-b030-1ad5b658e6ae" />
 
 ### **2. Configure Virtual Networks (VNets)**
 - Created separate VNets for each department:
   - **MAS-VNET** – `172.171.224.0/24`
   - **IT-VNET** – `172.191.41.0/24`
   - **HR-VNET** – `172.191.11.0/24`
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
+
+<img width="1543" alt="Vnets For MAS+IT+HR" src="https://github.com/user-attachments/assets/4289d76e-38ce-4d0d-a736-9e24a8aba5a8" />
 
 ### **3. Deploy Virtual Machines (VMs)**
 
@@ -59,34 +64,87 @@ By completing this lab, you will gain hands-on experience in:
 | IT         | ITAdmin  | Windows Server | `172.191.41.239`     | IT Management           |
 | HR         | HRAdmin  | Windows 10    | `172.191.11.73`      | Employee Management     |
 
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
 
+<img width="1543" alt="VM's for MAS+IT+HR" src="https://github.com/user-attachments/assets/0c95c4aa-9870-416b-b3f3-1ce1d0d0de3a" />
 
 ### **4. Implement Security Policies**
 - Created and applied NSGs:
   - **MAS & HR:** No ping access, no remote access, only secure web access.
   - **IT:** Can ping MAS & HR, full remote access, only secure web access.
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img width="500" alt="NSG Rules for Marketing & Sales" src="https://github.com/user-attachments/assets/85c4d725-fe34-4c27-ac1e-ea81470918bb" /></td>
+      <td><img width="500" alt="NSG Rules for Human Resources" src="https://github.com/user-attachments/assets/c9ed9e72-1234-45ff-9db1-d7468d7cfebd" /></td>
+      <td><img width="500" alt="NSG Rules for IT Dept" src="https://github.com/user-attachments/assets/df430039-0140-4671-9223-01979e83b18d" /></td>
+    </tr>
+  </table>
+</div>
 
 ### **5. Set Up Databases**
 - Deployed **Azure SQL databases**:
   - **MAS-Database** – Sales & marketing records.
   - **IT-Database** – IT asset inventory.
   - **HR-Database** – Employee records.
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img width="500" alt="SQL Commands+Database for MAS" src="https://github.com/user-attachments/assets/53b7166a-f0cb-4b71-b1f1-89b1cf1914f4" /></td>
+      <td><img width="500" alt="SQL Commands+Database for IT" src="https://github.com/user-attachments/assets/44335e1b-9094-4c30-8794-b066991d6b81" /></td>
+      <td><img width="500" alt="SQL Commands+Database for HR" src="https://github.com/user-attachments/assets/96995186-a534-4449-9025-0fdc56acc5c1" /></td>
+    </tr>
+  </table>
+</div>
 
 ### **6. Deploy Web Application**
 - Set up a **web app** using Azure App Services for the MAS department.
 - Displayed homepage message: **“Welcome to AZFK-Tech World”**.
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img width="500" alt="Custom WebApp Site Deployed on Custom Domain" src="https://github.com/user-attachments/assets/1e326b39-b16e-4739-bf4f-c78af9d41cdd" /></td>
+      <td><img width="500" alt="Azure App Services Server Deployed" src="https://github.com/user-attachments/assets/6473ee08-a94f-4544-96ca-a074d8685051" /></td>
+    </tr>
+  </table>
+</div>
 
 ### **7. Configure Shared Storage**
 - Created **Azure Files storage** for department collaboration.
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img width="500" alt="Azure Shared Storage Deployment" src="https://github.com/user-attachments/assets/577dd14d-4ab1-438b-9a65-de1f39425054" /></td>
+      <td><img width="500" alt="Azure FileShare for Shared Storage" src="https://github.com/user-attachments/assets/5b45f059-6687-424a-a2a5-679837048f17" /></td>
+    </tr>
+  </table>
+</div>
+
 
 ### **8. Set Up Monitoring with Azure Monitor**
 - Configured **Azure Monitor** to track VM performance.
-- 📸 **Screenshot Evidence:** ![View Here](#)
+- 📸 **Screenshot Evidence:** ![View Below]
+
+<div align="center">
+  <table>
+    <tr>
+      <td><img width="500" alt="Azure Monitor for MAS Insights" src="https://github.com/user-attachments/assets/8d2d15ed-3bb0-4043-9761-8eb3a6c2fca9" /></td>
+      <td><img width="500" alt="Azure Monitor for IT Insights" src="https://github.com/user-attachments/assets/19899fdf-161a-4666-92dd-ed974d6af82d" /></td>
+    </tr>
+    <tr>
+      <td><img width="500" alt="Azure Monitor for HR Insights" src="https://github.com/user-attachments/assets/f48b3d4e-09be-4d04-a2cd-507d3aaef30c" /></td>
+      <td><img width="500" alt="Azure Monitor Deployed" src="https://github.com/user-attachments/assets/d7338f21-209d-4b05-8b10-69f99f27dce3" /></td>
+    </tr>
+  </table>
+</div>
 
 ### **9. Export ARM Templates for Future Deployment**
 - Used PowerShell to export ARM templates.
@@ -142,7 +200,13 @@ Write-Output "🎯 All resource groups have been processed."
 3️⃣ **ExportVirtualMachineExtensionNotSupported**
    - **Fix:** Ignored non-exportable VM extensions; redeployed manually after main template deployment.
 
-📸 **Screenshots of Fixes:** ![View Here](#)
+📸 **Screenshots of Fixes:** ![View Below]
+
+<img width="1516" alt="Screen Shot 2025-02-03 at 8 35 25 PM" src="https://github.com/user-attachments/assets/8c044ed5-737d-47cd-bd36-2f8f1fe2db19" />
+
+### **11. (BONUS) Cloud Infrastructure Presentation Video**
+
+[![TechGneek - Azure Cloud Infrastructure Deployment (Presentation)](https://github.com/user-attachments/assets/41439133-1f38-428e-92d3-b620a2f7ac31)](https://www.youtube.com/watch?v=VbakPny5AnM&t=402s)
 
 ---
 
