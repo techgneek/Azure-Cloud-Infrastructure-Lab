@@ -33,7 +33,7 @@ By completing this lab, you will gain hands-on experience in:
 6. [Deploy Web Application](#6-deploy-web-application)
 7. [Configure Shared Storage](#7-configure-shared-storage)
 8. [Set Up Monitoring with Azure Monitor](#8-set-up-monitoring-with-azure-monitor)
-9. [Export ARM Templates for Future Deployment](https://github.com/techgneek/Azure-Cloud-Infrastructure-Lab/edit/main/README.md#9-export-arm-templates-for-future-deployment)
+9. [Export ARM Templates for Future Deployment](#9-export-arm-templates-for-future-deployment)
 10. [Challenges & Fixes](#challenges--fixes)
 
 ## **Project Steps**
