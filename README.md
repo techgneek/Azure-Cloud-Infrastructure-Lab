@@ -3,13 +3,37 @@
 ## Overview
 This project demonstrates the setup of a cloud-based IT infrastructure for **AZFK-Tech**, a fictional company, using **Microsoft Azure**. The project includes **virtual machines (VMs), networking, security policies, databases, a web application, shared storage, and monitoring services**.
 
-## **Objective**
-The objective of this lab is to design and deploy a secure and scalable **Azure cloud infrastructure** that simulates a real-world enterprise environment. This includes:
-- Configuring **networking and security policies** for department-specific isolation.
-- Deploying and managing **Azure virtual machines and storage solutions**.
-- Setting up **Azure SQL databases and web applications**.
-- Implementing **monitoring and alerting systems** for resource optimization.
-- Automating deployment using **ARM templates**.
+## 🎯 Project Objectives
+
+- **Created Azure Resource Groups** for three departments — Marketing & Sales (`jmoore-mas`), IT (`jmoore-it`), and HR (`jmoore-hr`) — to simulate department-based cloud infrastructure management.
+
+- **Configured Isolated Virtual Networks (VNets)** for each department:
+  - `MAS-VNET`: 172.171.224.0/24  
+  - `IT-VNET`: 172.191.41.0/24  
+  - `HR-VNET`: 172.191.11.0/24  
+
+- **Implemented Network Security Group (NSG) policies** per department:
+  - **MAS & HR**: Blocked ICMP (ping), blocked RDP/SSH, allowed HTTPS-only  
+  - **IT**: Allowed ping to MAS & HR, full remote access, allowed HTTPS-only  
+
+- **Deployed Windows Server 2022 VMs** in each department’s resource group and provisioned separate **Azure SQL Databases** with custom datasets via SQL queries.
+
+- **Launched a Web Application** for the Marketing & Sales department to simulate customer-facing services.
+
+- **Configured Azure File Storage and Azure Blob Containers** with **encryption keys** to enable secure inter-department file sharing.
+
+- **Enabled Azure Monitor** for real-time insights into performance metrics across all VMs, SQL databases, and the MAS web application (CPU, memory, disk usage, web app responsiveness).
+
+- **Exported Resource Group ARM templates** via PowerShell for backup and repeatable infrastructure deployment.
+
+- **Recorded and presented** a sales pitch video demonstrating cloud capabilities for a fictitious company (**AZFK Tech**) to simulate stakeholder engagement.
+
+### 📺 Watch the Video: Cloud Infrastructure Presentation Video**
+
+[![TechGneek - Azure Cloud Infrastructure Deployment (Presentation)](https://github.com/user-attachments/assets/41439133-1f38-428e-92d3-b620a2f7ac31)](https://www.youtube.com/watch?v=VbakPny5AnM&t=402s)
+
+- **In this video, I present the cloud infrastructure designed for AZFK Tech, showcasing how Azure can support departmental segmentation, security, and scalability.**
+- **It’s a high-level overview and pitch to company leadership, demonstrating the value of custom Azure environments for modern business operations.**
 
 ## **Skills Learned**
 By completing this lab, you will gain hands-on experience in:
@@ -35,7 +59,6 @@ By completing this lab, you will gain hands-on experience in:
 8. [Set Up Monitoring with Azure Monitor](#8-set-up-monitoring-with-azure-monitor)
 9. [Export ARM Templates for Future Deployment](#9-export-arm-templates-for-future-deployment)
 10. [Challenges & Fixes](#10-challenges--fixes)
-11. [(BONUS) Cloud Infrastructure Presentation Video](#11-bonus-cloud-infrastructure-presentation-video)
 
 ## **Project Steps**
 ### **1. Set Up Department Group Resources**
@@ -203,10 +226,6 @@ Write-Output "🎯 All resource groups have been processed."
 📸 **Screenshots of Fixes:** ![View Below]
 
 <img width="1516" alt="Screen Shot 2025-02-03 at 8 35 25 PM" src="https://github.com/user-attachments/assets/8c044ed5-737d-47cd-bd36-2f8f1fe2db19" />
-
-### **11. (BONUS) Cloud Infrastructure Presentation Video**
-
-[![TechGneek - Azure Cloud Infrastructure Deployment (Presentation)](https://github.com/user-attachments/assets/41439133-1f38-428e-92d3-b620a2f7ac31)](https://www.youtube.com/watch?v=VbakPny5AnM&t=402s)
 
 ---
 
