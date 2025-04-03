@@ -28,7 +28,9 @@ This project demonstrates the setup of a cloud-based IT infrastructure for **AZF
 
 - **Recorded and presented** a sales pitch video demonstrating cloud capabilities for a fictitious company (**AZFK Tech**) to simulate stakeholder engagement.
 
-### 📺 Watch the Video: Cloud Infrastructure Presentation Video**
+# Azure Cloud Infrastructure Lab 🖥
+
+## 📺 **Watch the Video: Cloud Infrastructure Presentation Video**
 
 [![TechGneek - Azure Cloud Infrastructure Deployment (Presentation)](https://github.com/user-attachments/assets/41439133-1f38-428e-92d3-b620a2f7ac31)](https://www.youtube.com/watch?v=VbakPny5AnM&t=402s)
 
